@@ -2,14 +2,19 @@
 :root {
   --main-font: "ITC Avant Garde Gothic Std Book", sans-serif;
   --title-font: "ITC Avant Garde Gothic Std Bold Condensed", sans-serif;
+  --light-font: "ITC Avant Garde Gothic Std Extra Light", sans-serif;
   --font-color: #222222;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
 }
 
 /* navbar css */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1rem 1rem 0 1rem;
 }
 .menu {
   display: flex;
@@ -24,6 +29,8 @@
   font-size: 29px;
   line-height: 30px;
   color: var(--font-color);
+  width: 80%;
+  text-align: center;
 }
 .getIntouch,
 .menu {
@@ -52,9 +59,341 @@
     url(./assets/pexels-kateryna-babaieva-2760242\ 1img1.png);
   mix-blend-mode: normal;
   margin-top: 15px;
-  height: 90vh;
+  min-height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.header-hero h1 {
+  font-family: var(--main-font);
+  font-size: 90px;
+  color: #ffffff;
+  width: 70%;
+  margin-left: 40px;
+}
+.red-box {
+  width: 200px;
+  height: 200px;
+  background: #ec223380;
+  margin-left: 40px;
+}
+.red-box h4 {
+  font-family: var(--main-font);
+  font-size: 30px;
+  color: #f7f7f700;
+  -webkit-text-stroke: 0.05px rgba(255, 255, 255, 0.81);
+  margin-left: 30%;
+  padding-top: 27%;
+}
+.red-box h4::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1.5px;
+  background: #f7f7f7b7;
+  margin-top: 1.7%;
+  margin-left: 4.5%;
+}
+.moving-text-header h4 {
+  font-size: 30px;
+  font-family: var(--light-font);
+  color: #ffffff;
+}
+.moving-text-header {
+  display: flex;
+  margin-top: -10%;
+  margin-left: 7.3%;
+  text-transform: capitalize;
+}
+/* main section css */
+.main-section {
+  margin: 10% 15%;
+  min-height: 50vh;
+}
+.main-section p,
+.main-section2 p {
+  font-family: var(--light-font);
+  font-size: 16px;
+  font-weight: 800;
+}
+.main-section h2,
+.main-section2 h2 {
+  font-family: var(--main-font);
+  font-size: 60px;
+  width: 70%;
+  margin-top: 0;
+}
+.desc {
+  width: 35%;
+  float: right;
+  margin-bottom: 60px;
+}
+.exp-box {
+  display: flex;
+  width: 100%;
+}
+.box h2 span {
+  color: #ec2232;
+  font-size: 90px;
+}
+.box h2 {
+  font-size: 100px;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+}
+.box p {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+.box {
+  border-right: 1.2px solid #c4c4c4;
+  width: 33.5%;
+  height: 12rem;
+}
+
+/* main section 2 */
+.main-section2 {
+  background-color: #f7f7f7;
+  padding-top: 10%;
+
+  height: 77vh;
+}
+.main-container {
+  margin-left: 15%;
+}
+.img-1,
+.img-2 {
+  position: absolute;
+}
+.img-1 {
+  left: 65%;
+  top: 224%;
+}
+.img-2 {
+  left: 0;
+  top: 215%;
+}
+
+/* card conatienr css */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+  margin-top: -16%;
+  margin-left: 15%;
+  margin-bottom: 14%;
+}
+.card {
+  width: 30%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 29px;
+  background-repeat: no-repeat;
+}
+
+.c1 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.05%, #000000 110.99%),
+    url(./assets/pexels-rodolfo-quirós-2219024\ 1.png);
+}
+.c2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.05%, #000000 110.99%),
+    url(./assets/pexels-pixabay-33192\ 2.png);
+}
+.c3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.05%, #000000 110.99%),
+    url(./assets/image\ 16.png);
+}
+.card h5,
+.card p {
+  color: #ffffff;
+  font-family: var(--light-font);
+  margin: 3px 12px;
+}
+
+.card h5 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.card h5::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  background: #ec2232;
+  height: 2.8px;
+  margin-left: 4px;
+  margin-top: -10px;
+}
+
+/* main section 3rd css */
+.main-section3 {
+  background: url(./assets/chester-alvarez-bphc6kyobMg-unsplash.jpg);
+  opacity: 0.98;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: var(--light-font);
+  min-height: 100vh;
+}
+/* .section3-container {
+  margin: 10% 15%;
+} */
+.section3-container1 {
+  width: 45%;
+  padding-top: 14%;
+}
+.section3-container2 {
+  width: 25%;
+}
+.details-wrapper {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+}
+.label img {
+  width: 50px;
+  height: 50px;
+}
+
+.label h4,
+.label h2 {
+  font-family: var(--title-font);
+}
+.label p {
+  margin: 0;
+  text-transform: capitalize;
+}
+.section3-container1 h2 {
+  font-size: 50px;
+  font-family: var(--main-font);
+  margin: 0;
+}
+.section3-container1 p,
+.label p {
+  font-size: 16px;
+}
+
+.section3-container2 img {
+  height: 160px;
+  width: 160px;
+  top: 43%;
+  left: 30%;
+
+  position: relative;
+}
+
+/* contact section css */
+.contact-section {
+  justify-content: center;
+  min-height: 80vh;
+  /* background: url(./assets/image\ 15.png); */
+  background: #e8e8e8;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--light-font);
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+}
+.map-area {
+  width: 42%;
+  padding: 15px;
+}
+.map-area h2 {
+  font-family: var(--main-font);
+  font-size: 50px;
+}
+
+.map-area img {
+  width: 25rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-area .form {
+  width: 27rem;
+  height: 395px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding-top: 50px;
+  margin-top: 13%;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form .field {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  margin-left: 10%;
+  margin-bottom: 22px;
+}
+.field label {
+  font-size: 15px;
+  color: #8e8e8f;
+}
+.field input {
+  height: 12px;
+  border-bottom: 1.5px solid #cdcdcd !important;
+  border: none;
+}
+.field label i {
+  margin: 10px 15px 0 0;
+  font-size: 17px;
+}
+
+.form button {
+  margin-left: 10%;
+  padding: 11px 41px;
+  border-radius: 26px;
+  border: none;
+  font-size: 18px;
+  background: #ec2232;
+  color: #ffffff;
+}
+
+/* footer css */
+.footer {
+  display: flex;
+  padding: 30px 6.2rem;
+  margin-top: 10px;
+  justify-content: space-between;
+  min-height: 12rem;
+  background: #181818;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+.footer h2 {
+  font-family: var(--main-font);
+  text-transform: capitalize;
+}
+.footer p,
+.footer ul {
+  font-family: var(--light-font);
+}
+.list-items {
+  display: flex;
+  margin-left: -24px;
+}
+.list-items ul li {
+  margin-bottom: 10px;
+}
+.icons {
+  padding-top: 26px;
+}
+.icons i {
+  padding: 8px;
+  font-size: 18px;
 }
