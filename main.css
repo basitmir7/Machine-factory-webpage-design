@@ -1,0 +1,60 @@
+@import url("http://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book");
+:root {
+  --main-font: "ITC Avant Garde Gothic Std Book", sans-serif;
+  --title-font: "ITC Avant Garde Gothic Std Bold Condensed", sans-serif;
+  --font-color: #222222;
+}
+
+/* navbar css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 25px;
+}
+.title {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 30px;
+  color: var(--font-color);
+}
+.getIntouch,
+.menu {
+  margin-top: 8px;
+}
+.getIntouch h3 {
+  font-family: var(--main-font);
+  font-size: 15px;
+  margin: 0;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--font-color);
+
+  border-bottom: 1px solid #000;
+}
+
+/* header css */
+.header-hero {
+  background: linear-gradient(
+      180deg,
+      #05283e -23.09%,
+      rgba(9, 67, 103, 0) 107.85%
+    ),
+    url(./assets/pexels-kateryna-babaieva-2760242\ 1img1.png);
+  mix-blend-mode: normal;
+  margin-top: 15px;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+}
