@@ -368,7 +368,7 @@ body {
 .footer {
   display: flex;
   padding: 30px 6.2rem;
-  margin-top: 10px;
+
   justify-content: space-between;
   min-height: 12rem;
   background: #181818;
@@ -396,4 +396,93 @@ body {
 .icons i {
   padding: 8px;
   font-size: 18px;
+}
+
+@media screen and (max-width: 920px) {
+  .header-hero h1 {
+    font-size: 60px;
+  }
+  .main-section h2,
+  .main-section2 h2 {
+    font-size: 50px;
+  }
+  .box h2 span {
+    font-size: 50px;
+  }
+  .box p {
+    font-size: 18px;
+  }
+  .exp-box {
+    flex-wrap: wrap;
+  }
+  .img-1,
+  .img-2 {
+    display: none;
+  }
+  .form-area .form {
+    margin-top: 17%;
+  }
+
+  .map-area img {
+    width: 86%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 80%;
+    height: 420px;
+    margin-bottom: 20px;
+  }
+  .map-area {
+    width: 65%;
+  }
+  .form-area .form {
+    width: 20rem;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header-hero {
+    padding: 0;
+  }
+  .red-box h4::before {
+    margin-top: 4.7%;
+    margin-left: 10.5%;
+  }
+  .exp-box {
+    flex-direction: column;
+  }
+  .box {
+    width: 90%;
+    border: none;
+  }
+  .main-container h2 {
+    font-size: 40px;
+  }
+  .desc {
+    float: none;
+    width: 100%;
+  }
+  .section3-container2 {
+    display: none;
+  }
+  .section3-container1 {
+    width: 70%;
+    min-height: 107vh;
+  }
+  .section3-container1 h2 {
+    font-size: 40px;
+  }
+  .details-wrapper {
+    flex-direction: column;
+  }
+  .label {
+    margin-bottom: 15px;
+  }
+  .footer {
+    padding: 29px 2.2rem;
+  }
 }
